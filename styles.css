@@ -1,0 +1,93 @@
+body{
+    background-color: #000033 !important;
+    font-family: 'MedievalSharp', cursive !important;
+
+}
+/**Section IDs**/
+#classes{
+    background-color:#C0C0C0;
+    color:white;
+}
+
+#footer{
+    background-Color:#000033;
+    color:#ffffff;
+    padding-top:2%;
+    padding-bottom:2%;
+}
+
+/**Navbar CSS**/
+
+.navbar-brand{
+    font-size: 2vw !important;
+    background-color: #000033 !important; 
+    font-family: 'MedievalSharp', cursive !important; 
+    padding-top:10%;
+}
+
+.nav-link{
+    font-size: 1.5vw !important;
+    font-family: 'MedievalSharp', cursive !important; 
+}
+.navbar-nav > li{
+    padding-left: .5vw !important;
+    padding-right: .5vw !important;
+  }
+
+.navbar-light{
+    background-color:#343a40 !important;
+  }
+
+.dropdown-item{
+    font-size:1.5vw !important;
+    font-family: 'MedievalSharp', cursive !important; 
+}
+
+.brandLogo{
+    height:5vw;
+}
+
+.navbar-nav > li > .dropdown-menu { 
+    background-color: #000033 !important; 
+}
+
+.navbar-nav > li > .dropdown-menu a:hover { 
+    background-color: #C0C0C0 !important;
+}
+
+/**Scrolling Container CSS **/
+.scrollContainer{
+    padding:2% 2%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+/**Table CSS **/
+.tableAlign{
+    text-align:center;
+    height:350px;
+}
+
+.firstColumn{
+    padding-left:15%;
+}
+
+/**Carousel CSS **/
+
+.accordion-item{
+    background-color:red;
+}
+
+.bg-dark{
+    color:white !important;
+}
+
+/**Footer**/
+.footerDesign{
+    font-size: 3rem;
+}
+.disclaimer{
+    font-size:.75rem;
+    padding-top:2%;
+    text-align: center;
+}
