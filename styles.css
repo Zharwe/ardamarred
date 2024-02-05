@@ -1,16 +1,22 @@
 body{
     background-color: #000033 !important;
-    font-family: 'MedievalSharp', cursive !important;
-
+    font-family: 'MedievalSharp', cursive;
 }
 /**Section IDs**/
-#classes{
+#races{
     background-color:#C0C0C0;
     color:white;
+    font-family: 'MedievalSharp', cursive;
+}
+
+#classes{
+    background-color:#C0C0C0;
+    font-family: 'MedievalSharp', cursive;
 }
 
 #footer{
     background-Color:#000033;
+    font-family: 'MedievalSharp', cursive;
     color:#ffffff;
     padding-top:2%;
     padding-bottom:2%;
@@ -72,14 +78,61 @@ body{
     padding-left:15%;
 }
 
-/**Carousel CSS **/
-
+/**Accordion CSS **/
 .accordion-item{
-    background-color:red;
+    background-color: #000033 !important;
 }
 
 .bg-dark{
-    color:white !important;
+    color:white !important; 
+}
+
+.accordionHead{
+    color:#C0C0C0;
+    font-size:1.5rem;
+    padding-left:2%;
+    padding-top:1%;
+}
+.accordion-body{
+    background-color:#C0C0C0 !important;
+    font-size:1rem;
+    padding-left:2%;
+    padding-top:1%;
+}
+.accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+  }
+
+.accordionText{
+    vertical-align: middle;
+    border-width:10px;
+    border-style:solid !important;
+}
+
+.accordionButton{
+    text-align:center;
+    padding-top:2%;
+}
+
+.insideAccordionButton{
+    margin-left:2%;
+    background-color:#000033 !important;
+    color:#ffffff !important;
+}
+
+/**Cards**/
+.card-header{
+    background-color: #000033 !important;
+    color:#ffffff !important;
+}
+.card-body{
+    background-color:#C0C0C0 !important;
+
+}
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
 }
 
 /**Footer**/
