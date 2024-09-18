@@ -118,6 +118,7 @@ body{
     margin-left:2%;
     background-color:#000033 !important;
     color:#ffffff !important;
+
 }
 
 /**Cards**/
@@ -134,7 +135,21 @@ body{
     float: none; /* Added */
     margin-bottom: 10px; /* Added */
 }
-
+/**Main Page**/
+.informationRow{
+    font-size:1.25rem;
+    padding-top:2%;
+    padding-bottom:2%;
+    align-items:center;
+    display:inline-block;
+    white-space:normal;
+    text-align:justify;
+}
+/**Races Page**/
+.raceDescText{
+    font-size: 1.25rem;
+    color:#ffffff;
+}
 /**Skills Page**/
 .skillKeyWord{
     color:#000033;
@@ -150,9 +165,26 @@ body{
     color:#000033;
 }
 
+/**StatsPage**/
+.statsRow{
+    font-size:1.25rem;
+    padding-top:2%;
+    padding-bottom:2%;
+}
+/** Accordion Styles **/
+.accordionStyles{
+    color:#ffffff;
+}
+
+.accordionImages{
+    padding-top:2%;
+    padding-bottom:2%;
+}
+
 /**Footer**/
 .footerDesign{
     font-size: 3rem;
+    text-align:center;
 }
 .disclaimer{
     font-size:.75rem;
