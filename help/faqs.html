@@ -91,9 +91,99 @@
       </nav>
 
   <!--The carousel for all non-STEAM classes-->
-      <section id="classes" class="scrollContainer">
-        <h1>Frequently Asked Questions</h1>
-      </section>
+    <section id="classes" class="scrollContainer">
+        <section class="container-fluid" style="width:80%;">
+            <div class="row" style="text-align:center; color:#FFFFFF;">
+                <div class="col-lg-12">
+                    <h1 style="padding-top:2%;padding-bottom:2%;">Frequently Asked Questions</h1>
+                </div>
+            </div>
+
+
+    <!--Firing a Bow-->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <p class="accordionHead">How Do I Fire My Bow?</p>
+                </button>
+              </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="chargenDescript">
+                            There are a few steps to firing your bow. First, you must have your bow in one of your hands and either a quiver with arrows in it. The arrows must match
+                            the bow type. Once you have met those two conditions you can use the <span class="commandKeyword">load</span> command. This command will wield your bow and load it with an arrow
+                            of the appropriate type. An important note at this point is that you should have your target in sight before using the <span class="commandKeyword">ready</span>
+                            command. When you use the <span class="commandKeyword">ready</span> command you will begin to drain stamina. You can use the <span class="commandKeyword">targets
+                            </span> command to see which targets are in your line of sight.
+                        </p>
+                        <p class="chargenDescript">
+                            Once you have loaded your bow and have established a target, you can use the <span class="commandKeyword">ready</span> command that will then allow you to use 
+                            the <span class="commandKeyword">aim</span> command. You will begin aiming at your target and when you feel you are ready, you can use the <span class="commandKeyword">fire</span> 
+                            command. For an example of how to properly use the syntax, an example is listed below.                            
+                        </p>
+                        <div style="text-align:center;"> 
+                            <img src="images/bow1.png" class="chargenImages">
+                            <img src="images/bow2.png" class="chargenImages">
+                        </div>
+                    </div>
+            </div>
+
+            <!--Shop Management-->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <p class="accordionHead">How Do I Manage My Shop?</p>
+                  </button>
+                </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          <p class="chargenDescript">
+                              The first thing you need to know about running a shop is the <span class="commandKeyword">shop</span> command. With this command you will be able to see 
+                              every subcommand that is available to you for your shop. If you are the manager of the shop then you will need to know how most of these commands work.
+                              Good news is, there is a tooltip for how each of the commands work. The hierarchy in level of employment is manager, proprietor, and then employee. As a 
+                              manager and proprietor you can hire and fire employees.
+                          </p>
+                          <p class="chargenDescript">
+                              Once you have established how to hire, fire, and promote employees you will want to stock your shop with items for sale. To begin stocking items, you first have 
+                              to set up an item profile for your shop. You will be able to determine what the item costs, if it should be reordered, if you will buy the item from others, and more!
+                              The command you will want to start with is <span class="commandKeyword">shop merch</span>. Using this command, you will be able to see all of the subcommands available
+                              to you for the merchandise sold in the shop.  The next thing you will want to do is use the <span class="commandKeyword">shop merch new</span> command to set up an item.
+                              Once you have set up an item, you will never have to set it up again. You will be able to modify the price and name of the item at any point in the future. While 
+                              setting up the merchandise, you will have to enter a few parameters. The full command would look like this <span class="commandKeyword">shop merch new (item description) 
+                                (id)|(target) (price) </span>
+
+                            <br>
+                            <br>
+                            Here are a couple of examples of how you might write the command to add items to your shop:
+                            <br>
+                            <span class="commandKeyword">shop merch new "Medium Mixing Bowl" bowl 15b</span>
+                            <br>
+                            <span class="commandKeyword">shop merch new "Raw Bear Haunch" haunch 50b</span>
+                            <br>
+                            <span class="commandKeyword">shop merch new "Iron Shortsword" shortsword 250b</span>
+                          </p>
+                          <p class="chargenDescript">
+                            After you use the shop merch new command, you can then begin stocking your items. To do this, you will need to use the <span class="commandKeyword">shop stock</span>
+                            command. In order to use the <span class="commandKeyword">shop stock</span> command you simply need to tell it which item to stock. So an example of this, based on the
+                            previously created merchandise would be:
+                            <br>
+                            <span class="commandKeyword">shop stock bowl</span>
+                            <br>
+                            <span class="commandKeyword">shop stock haunch</span>
+                            <br>
+                            <span class="commandKeyword">shop stock shortsword</span>
+                          </p>
+                          <p class="chargenDescript">
+                            In order for the item to show up in your shop, you simply have to drop the item in the shop's storeroom. Any items located in the shop's stock and placed in 
+                            the storeroom will not decay.
+                          </p>
+                      </div>
+              </div>
+        </div>
+        </section>
+    </section>
+
 
       <section id="footer" class="scrollContainer">
         <h1 style="text-align:center;">Follow Arda Marred</h1>
