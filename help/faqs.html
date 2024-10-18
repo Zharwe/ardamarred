@@ -128,6 +128,8 @@
                         </div>
                     </div>
             </div>
+            </div>
+
 
             <!--Shop Management-->
             <div class="accordion-item">
@@ -175,12 +177,244 @@
                             <span class="commandKeyword">shop stock shortsword</span>
                           </p>
                           <p class="chargenDescript">
-                            In order for the item to show up in your shop, you simply have to drop the item in the shop's storeroom. Any items located in the shop's stock and placed in 
-                            the storeroom will not decay.
+                            Another method for stocking your shop can be to use the <span class="commandKeyword">shop autostock</span> command. This command will automatically stock 
+                            any items that are able to be stocked in your shop. The items can be in your hand or on the floor in your stockroom and it will check against your shop
+                            merchandise list.
+                          </p>
+
+                          <p class="chargenDescript">
+                            Once you have stocked your item to show up in your shop, you simply have to drop the item in the shop's storeroom. Any items located in the shop's stock and 
+                            placed in the storeroom will not decay.
                           </p>
                       </div>
               </div>
-        </div>
+              </div>
+
+              <!--Shop Management Part 2-->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    <p class="accordionHead">How Do I Manage Variable Items In My Shop?</p>
+                  </button>
+                </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                          <p class="chargenDescript">
+                            When stocking items that have a variable all of the items will be stocked in the same shop merchandise profile. You will have to give the merchandise a base 
+                            cost and then apply a multiplier for that based on which variant that can be chosen. Currently, there is no syntax for how to set the variable, but it is in development
+                            by the FutureMud Developers. When you add a new piece of shop merchandise your shop list will look like this:
+                          </p>
+                          <div style="text-align:center;"> 
+                            <img src="images/shopList.png" class="chargenImages">
+                          </div>
+                          <p class="chargenDescript">
+                            Then, when wanting to see which variants are available you can use the <span class="commandKeyword">list variants (item)</span> command.
+                          </p>
+                          <div style="text-align:center;"> 
+                            <img src="images/variantList.png" class="chargenImages">
+                          </div>
+                    </div>
+               </div>
+              </div>
+<!--Shop Management Part 2-->
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+      <p class="accordionHead">What Should I know About Combat?</p>
+    </button>
+  </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body chargenDescript">
+        
+        <h1>Hit</h1>
+        <p>
+          If you wish to attack someone, you can <span class=”commandKeyword”>HIT (Target)</span> to initiate combat.
+        </p>
+        <br/>
+        <h1>‘Charge’</h1>
+          <p>
+          If you are at range however, you can use the “CHARGE” command to charge yourself into melee with your opponent.
+          </p>
+          <br/>
+          <h1>‘Cover’</h1>
+          <p>
+          If you are being attacked at a range you may also use the ‘COVER’ command to look for any suitable cover in the area. Not all terrain types have cover however some items within rooms can be used for cover. A common cover item is a flipped table, which you can use for cover if you use the ‘FLIP’ command before using ‘COVER’. Each type of cover has a set number of people it can provide cover for so it can be a limited item depending on the room.
+          </p>
+          <br/>
+          <h1>Target</h1>
+          <p>
+          While in melee combat you may also use the ‘TARGET’ command to target a specific location on your opponent, a common use for this would be to ‘target face’ so that you start performing attacks that are more likely to hit the opponent in the face. This can also be used
+          </p>
+          <br/>
+          <h1>Flee</h1>
+          <p>
+          If you decide you’ve had enough you can use the ‘FLEE’ command to attempt to escape combat, this will be contested by your opponent. Should you escape the melee into a skirmish range, you can then move into a direction. Your speed will automatically be set to sprint.
+          </p>
+          <br/>
+          <h1>Surrender</h1>
+          <p>
+          While in a fight, you can also use the ‘SURRENDER’ command to submit to your attacker. Not all opponents will accept, however it is useful if you find yourself on the wrong end of the law. If your surrender is accepted. You will be able to ‘STRUGGLE’ to attempt to break free
+          </p>
+          <br/>
+          <h1>Health</h1>
+          <p>
+          The ‘HEALTH’ command will give you details about your character's health, this will allow you to keep track of your health and how many wounds you have and where your pain is. Remember that your characters have organs and if they’re damaged there is likely to be pain in those locations
+          </p>
+          <br/>
+          <h1>’Bind’</h1>
+          <p>
+          If you have a bleeding wound you can use the Bind command in an attempt to stem the bleeding
+          </p>
+          <br/>
+          <h1>Second Wind</h1>
+          <p>
+          When your character runs out of stamina, they will incur a ‘second wind’ which will return their stamina to full. The cooldown for a second wind is quite long so it is likely to only occur once in a battle. Be careful if your second wind is on cooldown as you may become too exhausted to fight.
+          </p>
+          <br/>
+          <h1>Look at wounds</h1>
+          <p>
+          If you’ve been fighting a creature such as a beaver and you want to see how much damage  they have taken so far you can use “LOOK BEAVER WOUNDS” and it will list all the wounds your character can see. Not all wounds will show as some may be covered by clothing or armour. However you can often tell if someone has a bleeding wound due to the blood soaking through their clothes.
+          </p>
+          <br/>
+          <h1>Trip and Stagger</h1>
+          <p>
+          Some attacks cause the opponent to fall over, Trip attacks roll vs the opponents agility, while stagger will roll vs their strength. If the opponent fails they will be prone. When an opponent is prone it will allow for Downed Attacks, which are typically stronger and harder to defend against than regular attacks.
+          </p>
+          <br/>
+          <h1>Party actions</h1>
+          <p>If you’re in a group, these are the combat actions you want to know</p>
+          <br/>
+          <h1>Rescue <target></h1>
+          <p>You can use the ‘RESCUE’ command to save another PC from being targeted and changing the target to you. Helpful if your friend is losing the fight or has taken a critical injury
+          </p>
+          <br/>
+          
+          <h1>Guard <target></h1>
+          <p>
+          Guard prevents an enemy from initiating combat with whomever you target and instead, to initiate it with you
+          </p>
+          <br/>
+          <h1>Interpose <target></h1>
+          <p>
+          This allows you to put yourself between a ranged attacker and your target, causing shots at your target to instead hit you. Useful if you’re wielding a shield to block ranged attacks
+          </p>
+          <br/>
+          <h1>Support <target></h1>
+          <p>The ‘SUPPORT’ command allows you to join combat against the person your target is fighting. This allows you to quickly focus your fire in a group
+          </p>
+          <br/>
+          <h1>’Spar’</h1>
+          <p>
+          The ‘SPAR’ command allows you to engage in a fight where any participant can stop the fight at any time. It is used for friendly sparring and training, both participants must accept before a spar can begin
+          </p>
+          <br/>
+
+          <p style="text-align:right;">Written by RobotJesus</p>
+      </div>
+    </div>
+</div>
+
+              <!--Combat Mechanics-->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    <p class="accordionHead">What Are Combat Stances?</p>
+                  </button>
+                </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body chargenDescript">
+                      <h1 style="text-align:center;">Combat Stances</h1>
+                      <p>
+                      Within Futuremud there are a few different combat stances a character can take, these include
+                      </p>
+                      <p>
+                      <span class="commandKeyword">Warding</span> - Keeping you opponent at a distance<br/>
+                      <span class="commandKeyword">Normal</span> - Regular melee combat<br/>
+                      <span class="commandKeyword">Clinching</span> - Close range strikes<br/>
+                      <span class="commandKeyword">Wrestling</span> - Clinching range grappling attacks that restrain or wrench limbs<br/>
+                      <span class="commandKeyword">Skirmishing</span> - Moving to a ranged distance within the same room to use a ranged weapon<br/>
+                      <p>
+                      All of these except for skirmishing can be selected at any time in combat with the commands 'WARD' 'CLINCH' and 'GRAPPLE'
+                      </p>
+                      <h2 style="text-align:center;">Warding </h2>
+                      <p>
+                      Warding is influenced by your skill in warding and the length of your weapon, typical weapons that do well with warding would be spears and swords but any weapon (or no weapon) can be used to ward. While warding your opponent will roll to resist your ward, if they succeed they will perform an attack. If they perform an attack however you will perform a warding attack against them which they will have to defend against. The drawback for warding is that you cannot Parry attacks but instead, must either Dodge or use a Shield. 
+                      </p>
+                      
+                      <h2 style="text-align:center;">Clinching</h2>
+                      <p>
+                      Clinching involves getting up close into someone's face to perform attacks. In order to begin a clinch, you must use a round of combat in an attempt to close the distance with them. This will roll for you to initiate the clinch and for your opponent to resist you starting the clinch. If you fail, you will continue to attempt to close the distance until you have succeeded. Once you are within the clinch you will perform Clinching Attacks, Clinching Attacks will always hit your opponent and you will roll your weapon attack vs your opponents dodging ability to determine the damage done. Your opponent may then decide to try and break your clinch by rolling to break, clinch back, begin to wrestle you, or try to trip/stagger you to end the clinch.
+                      </p>
+                      
+                      <h2 style="text-align:center;">Normal</h2>
+                      <p>
+                      Normal combat allows for block, dodging, and parrying to be used based on the difficulty of the incoming attack and your current skill level. Normal range is the default fighting range
+                      </p>
+                      <h2 style="text-align:center;">Wrestling</h2>
+                      <p>
+                      Wrestling occurs at clinch range and is used to prevent the opponent from attacking or moving, you can wrestle to incapacitate or wrestle to kill, wrestling to kill with ‘STRANGLE’ performs choking attacks to the throat after a series of contested rolls against the opponent, while wrestling to incapacitate will set to to a kneeling position and the opponent will be restrained.
+                      </p>
+                      
+                      <h2 style="text-align:center;">Skirmishing</h2>
+                      <p>
+                      Skirmishing is only selectable via the ‘COMBAT’ command settings. Skirmishing will perform a flee check when you are engaged in melee and bring you to a ranged melee. You will then perform ranged attacks at the opponent. This is particularly useful in group situations as someone who is engaged with an opponent will not be able to pursue you into the skirmish range.
+                      </p>
+                      
+                      <h2 style="text-align:center;">Defend</h2>
+                      <p>
+                      If you want to forego attacks and fight defensively, you can use the ‘DEFEND’ command, this will give you a bonus to your defensive skills.
+                      </p>
+                      
+                      <h2 style="text-align:center;">Execute</h2>
+                      <p>
+                      If you wish to perform a Coup de Grace attack, you can use the ‘EXECUTE’ command, ‘EXECUTE LIST’ will show you all of the attacks available to you, if you wish to perform one you must use ‘EXECUTE “Full attack name" <target>. 
+                      </p>
+                      <p style="text-align:right;">Written by RobotJesus</p>
+                    </div>
+               </div>
+              </div>
+
+               <!--Combat Mechanics Part 2-->
+               <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    <p class="accordionHead">What Is Combat Configuration?</p>
+                  </button>
+                </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body chargenDescript">
+                    <h1 style="text-align:center;">Combat command and combat config</h1>
+                    <p>
+                    Using the ‘combat’ command will bring up a helpfile with various different settings for combat. 
+                    There are a few default combat settings that showcase a few different styles of combat that can be selected with the ‘COMBAT’’ command via ‘COMBAT SET’. Once you find one you like with ‘COMBAT LIST’ you can clone it with ‘COMBAT CLONE’ and modify it with ‘COMBAT CONFIG’. Within the combat config command there are very many ways to tweak your character's AI to perform the behavior you would like, from automatically picking up weapons, to moving straight into warding, and many other selections. This is a very powerful tool and I would recommend experimenting with this to fine tune your combat experience. 
+                    </p>
+                    <p>
+                    If you are wondering why you have stopped attacking a defenseless creature, or any other behavior, it is good to look at the combat settings you have selected to see why. A common reason for someone to stop attacking is the ‘ATTACK HELPLESS’’ setting is set to false, meaning you will not attack anything that is unconscious or about to die.  
+                    </p>
+                    
+                    <h1 style="text-align:center;">Attacks Command</h1>
+                    <p>
+                    Using the Attacks Command you can see what attacks are available to you with your current combat settings for that specific weapon.’ATTACKS’ will show you all of your current unarmed attacks while ‘ATTACKS *weapon*’’ while holding a weapon will tell you every attack it can perform, how hard it is to perform, how hard each of the types of defense is, the orientation of the attack, the stamina cost, the flag associated with the attack, the speed of the attack, and the resist difficulty if it is a tripping or staggering attack. Flags can be used to further fine tune your attacks with combat config so you can restrict attacks available, a common use of this would be for enforcers to require the Non-Lethal tag so they only perform Non-Lethal attacks.
+                    </p>
+                    
+                    
+                    <h1 style="text-align:center;">Ranged Combat</h1>
+                    <p>
+                    When using ranged combat, the difficulty of the shot is determined by size of the target, the light level at the target, the amount of aim you have, any ‘COVER’ the target has and the number of rooms away the target is. Also, in order to fire at someone who is rooms away, you must first spot them with the ‘SCAN’ or ‘QUICKSCAN’ (qs) command. If you don’t want to lose them, or you want to point them out to others in your group you can use the ‘point’ command and others will be able to target them. All available targets you can see can be shown with the ‘targets’ command. 
+                    </p>
+                    <p>
+                    Before firing your weapon however you must first ‘LOAD’ the weapon, ‘READY’ it to be fired, and then ‘AIM’ at your target. When you aim at your target you begin to acquire aim over time. The higher your aim is the more accurate your shot. You will receive an echo when you have reached maximum aim
+                    </p>
+                    <p>
+                    Players wanting to keep at ranged combat should set their melee settings to ‘Skirmish’ so they will fall back when engaged, otherwise they may try to charge into melee after firing their shot. They may also want to increase or decrease their minimum range before firing so they may attack faster or more accurately.
+                    </p>
+                    <p style="text-align:right;">Written by RobotJesus</p>
+                  </div>
+              </div>
+              </div>
+
+              
+          </div>
         </section>
     </section>
 
