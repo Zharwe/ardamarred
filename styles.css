@@ -222,6 +222,13 @@ body{
     list-style-type:none;
 }
 
+/**FAQ Page**/
+.commandKeyword{
+    color:#000033;
+    display:inline;
+    font-style:italic;
+}
+
 /** Accordion Styles **/
 .accordionStyles{
     color:#ffffff;
