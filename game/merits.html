@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="../images/amLogo2.jpg" type="image/x-icon">
+<title>Arda Marred Home</title>
+<link href="../styles.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<!--Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-transparent navbar-inverse" data-bs-theme="dark">
+        <div class="container-fluid" style="padding-left:10%; padding-right:10%;">
+          <a class="navbar-brand ms-0" href="#"><img src="../images/amLogo2.jpg" class="brandLogo">Arda Marred</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto me-5">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Game
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="../game/stats.html">Attributes</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../game/skills.html">Combat Skills</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="../game/crafting.html">Craft Skills</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="../game/exploring.html">Exploring Arda Marred</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="../game/merits.html">Merits</a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item" href="../game/races.html">Races</a>
+                        </li>
+                        
+                        <li>
+                            <a class="dropdown-item" href="../game/roles.html">Roles</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Community
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="https://discord.gg/rnhymVekSW" target="_blank">Discord</a></li>
+                        <li><a class="dropdown-item" href="../community/community.html">Staff Policy</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Help
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../help/faqs.html">FAQs</a></li>
+                    <li><a class="dropdown-item" href="../help/files.html">Help Files</a></li>
+                    <li><a class="dropdown-item" href="../help/rpGuide.html">Roleplay Guidelines</a></li>
+                    <li><a class="dropdown-item" href="../help/rpp.html">RPPs and BPs</a></li>
+                    <li><a class="dropdown-item" href="../help/useful.html">Useful Commands</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Getting Started
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../getStarted/chargen.html">Character Creation</a></li>
+                    <li><a class="dropdown-item" href="../getStarted/connect.html">Connect</a></li>
+                    <li><a class="dropdown-item" href="../getStarted/futureSettings.html">Future MUD</a></li>
+                    <li><a class="dropdown-item" href="../getStarted/mudlet.html">Mudlet</a></li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="races" class="scrollContainer">
+        <div class="row"  style="text-align:center;">
+            <div class="col-12">
+                <h1>Merits & Flaws</h1>
+            </div>
+        </div>
+        <div class="row"  style="text-align:center;">
+            <div class="col-12">
+                <p style="font-size:1.25rem;">The merit and flaw system is a way for you to customize your character in a way that is unique and unlike others. Merits are ways to receive bonuses for different 
+                    rolls and checks based on a certain situation. For each merit you select you will need to select a flaw to match. Merits and flaws are broken down into three 
+                    categories. If you choose a category 3 merit you must choose a category 3 flaw. In addition, some merits cost build points in order to take. You can earn build 
+                    points by simply playing the game. </p>
+            </div>
+        </div>  
+        <hr />
+
+        <!--Beginning of Category 3-->
+        <div class="row pb-3">
+            <div class="Col-12" style="text-align:center;">
+                <h2 class="meritKeyword">Category 3 Merits & Flaws</h2>
+            </div>
+        </div>    
+        <div class="row pb-2"  style="text-align:center;">
+            <div class="col-12">
+                <p style="font-size:1.25rem;">Each merit from category 3 costs 500bp to choose. This will effectively limit you to making 2 choices from category 3. </p>
+            </div>
+        </div>
+
+        <!--Category Headers-->
+        <div class="row" style="text-align:center;">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <h3 class="meritColumnHead">Merit</h3>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <h3 class="meritColumnHead">Modifier</h3>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <h3 class="meritKeyword">Flaw</h3>
+            </div>
+        </div>
+
+        <!--Merits and Flaws-->
+        <div class="row meritText" style="text-align:center;">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+               <span class="meritKeyword">Buff -</span> Provides a bonus to your strength.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <span>1</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Weak -</span> Gives a malus to your strength.
+            </div>
+        </div>
+
+        <div class="row meritText" style="text-align:center;">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+               <span class="meritKeyword">Smarter -</span> Provides a bonus to your intelligence.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <span>1</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Dumb -</span> Gives a malus to your intelligence.
+            </div>
+        </div>
+
+        <div class="row meritText" style="text-align:center;">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+               <span class="meritKeyword">Graceful -</span> Provides a bonus to your dexterity.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <span>1</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Clumsy -</span> Gives a malus to your dexterity.
+            </div>
+        </div>
+
+        <div class="row meritText" style="text-align:center;">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+               <span class="meritKeyword">Decisive -</span> Provides a bonus to your willpower.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <span>1</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Irresolute -</span> Gives a malus to your willpower.
+            </div>
+        </div>
+
+        <div class="row meritText" style="text-align:center;">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+               <span class="meritKeyword">Sturdy -</span> Provides a bonus to your constitution.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <span>1</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Feeble -</span> Gives a malus to your constitution.
+            </div>
+        </div>
+
+        <div class="row meritText" style="text-align:center;">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+               <span class="meritKeyword">Nimble -</span> Provides a bonus to your agility.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <span>1</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Awkward -</span> Gives a malus to your agility.
+            </div>
+        </div>
+        <hr />
+
+        <!--Beginning of Category 2-->
+        <div class="row pb-3">
+            <div class="Col-12" style="text-align:center;">
+                <h2 class="meritKeyword">Category 2 Merits & Flaws</h2>
+            </div>
+        </div>    
+
+        <!--Category Headers-->
+        <div class="row" style="text-align:center;">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <h3 class="meritColumnHead">Merit</h3>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <h3 class="meritColumnHead">Modifier</h3>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <h3 class="meritColumnHead">Flaw</h3>
+            </div>
+        </div>
+
+        <!--Merits and Flaws-->
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Lone Wolf -</span> You will receive a bonus to all rolls when in a room by yourself.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>5</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Encochlophobia -</span> You will receive a minus to all rolls when in a room that has more than 3 people.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Claustrophile -</span> You will receive a different bonus to all checks based on which type of room you are in. Indoors, outdoors, cave, 
+            windowed, etc. The less of the outside you can see, the greater the bonus.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>Variable Based On Location</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Claustrophobia -</span> You will receive a different bonus to all checks based on which type of room you are in. Indoors, outdoors, cave, 
+                windowed, etc. The less of the outside you can see, the greater the bonus.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Scoptic Vision -</span> You will receive a bonus to all scan checks at night. No matter if you are indoors or outdoors.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>5</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Claustrophobia -</span> You will receive a minus to all scan checks at night. No matter if you are indoors or outdoors.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Far Sighted -</span> You will receive a bonus to all perception checks
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>5</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Near Sighted -</span> You will receive a minus to all perception checks.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Brick Fisted -</span> The quality of your attacks will increase by 1 level because your fists are hard.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>1 Quality Level</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Soft Fisted -</span> The quality of your attacks will decrease by 1 level because your fists are soft.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Heavy Foot -</span> Your kicks are hard and receive a bonus to quality when kicking someone.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>1 Quality Level</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Soft Kicks -</span> Your kicks are soft and receive a minus to quality when kicking someone.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Ambidextrous -</span> You will receive a bonus to all checks when holding/wielding more than one item.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>5</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Ambisinister -</span> You will receive a minus to all checks when holding/wielding more than one item.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Quick to Mend -</span> You receive a bonus to all healing checks
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>5</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Slow Healer -</span> You get a minus to all healing checks.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Nourished -</span> You will not need to eat as often as others
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>25%</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Ravenous -</span> You will get hungry faster.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Overhydrated -</span> You will not need to drink as much.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>25%</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Polydipsic -</span> You will get thirsty faster.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Iron Liver -</span> It will take more alcohol to get you drunk.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>25%</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Lightweight -</span> You will get drunk faster.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Social Butterfly -</span> You will receive bonuses to checks when you’re in a room with at least 4 other people.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>25%</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Autophobia -</span> You will take minuses to checks when you're in a room by yourself.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Quick Learner -</span> You will learn and branch skills at a faster rate
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>25%</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Slow Learner -</span> You will learn and branch skills more slowly.
+            </div>
+        </div>
+
+        <hr />
+
+        <!--Beginning of Category 2-->
+        <div class="row pb-3">
+            <div class="Col-12" style="text-align:center;">
+                <h2 class="meritKeyword">Category 1 Merits & Flaws</h2>
+            </div>
+        </div>    
+
+        <!--Category Headers-->
+        <div class="row" style="text-align:center;">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <h3 class="meritColumnHead">Merit</h3>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12">
+                <h3 class="meritColumnHead">Modifier</h3>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <h3 class="meritColumnHead">Flaw</h3>
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Heavy Sleeper -</span>  You sleep heavily and without worry and receive a bonus to all checks.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>2</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Nightmares -</span> You often have terrible nightmares of places, people and things far removed from Osgiliath. Whether these dreams are 
+                true or not, you could not say. You find it hard to get a good night's sleep with all these nightmares, and you will have small penalties to your checks due to sleep
+                deprivation                
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Well Rested -</span> When you receive rested bonuses, you receive extra because you sleep really well.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>2 Steps</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Haunted -</span> You will be haunted by something that you have done in your past. It might come in the form of being unable to sleep, 
+                paranoia of it happening again, stress on relations. Either way, you will receive a negative to all rolls.                
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Awareness -</span> You will receive a bonus to all perception checks because you are hyper aware of your surroundings.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>5</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Oblivious -</span> You will receive a negative to all perception checks because you are naturally oblivious to what is happening around you.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Strong Stomach -</span> You have a strong stomach and receive a bonus to healing checks.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>5</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Faint at Sight of Blood -</span> You will receive a negative to all healing checks because you have a queasy stomach when it comes to 
+                medical procedures.                
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Nyctophilia -</span> You thrive in the dark and will receive a bonus to all checks when the light level is under a certain brightness.            
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>5</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Afraid of the Dark -</span> You are afraid of the dark and will receive a negative to all checks when the light level is under a certain 
+                brightness.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Brave -</span> You are not afraid of confrontation and face it head on, receiving a bonus to all hostile rolls.            
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>5</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Afraid of the Dark -</span> You are afraid of the dark and will receive a negative to all checks when the light level is under a certain 
+                brightness.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Attractive -</span> You are attractive which brings favor from anyone you interact with. IN fact, others actually treat you a bit differently 
+            and gives you a bonus to all friendly rolls.            
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>5</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Ugly -</span> You are ugly and do not receive favor from anyone. In fact, others actually treat you a bit differently and give you a minus 
+                to all friendly rolls.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Poison Resistant -</span> You have something in your system that makes you specifically resistant to poisons and are more likely to survive 
+            being poisoned.           
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>25%</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Poison Adverse-</span> You have something in your system that makes you less likely to survive being poisoned.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Poison Resistant -</span> You have something in your system that makes you specifically resistant to poisons and are more likely to survive 
+            being poisoned.           
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>25%</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Poison Adverse-</span> You have something in your system that makes you less likely to survive being poisoned.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Berserk -</span> You will receive a heavy bonus to all checks when in combat. <em style="color:#000033;">Cost: 100bp</em>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>15</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Combat Paralysis-</span> You will receive a heavy malus to all checks when in combat.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Speedster -</span> You will move faster than everyone else.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>25%</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Slowpoke -</span> You will move slower than everyone else.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Infection Resistant -</span> You will receive a bonus when checks are made against infections.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>2 Steps</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Infection Prone -</span> You will receive a negative when checks are made against infection.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Neat Stitches -</span> You are neat and tidy when performing surgery. Thus, you will provide bonuses to recovery.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>1 Degree</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Sloppy Surgeon -</span> You are sloppy when performing surgery. Thus, you will provide negatives to recovery bonus.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Will to Live -</span> You have a strong will to live. Thus, your brain and heart function will operate with a bonus and you will suffer less 
+            from hypoxia.            
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>10%</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Death Wish -</span> You are actively seeking to die. Thus, your brain and heart function will operate at a negative and you will suffer 
+                more from hypoxia.                
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Tough Core -</span> Your opponent will be less likely to hit your organs.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>25%</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Soft Insides -</span> Your opponent will be more likely to hit your organs.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Athletic -</span> You will use less stamina when moving.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>25%</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Out of Shape -</span> You are out of shape and use more stamina when moving.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Well Spoken -</span> You get a bonus to all language checks.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>20</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Lisp -</span> You get a minus to all language checks.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Carefree -</span> You will receive a bonus to all active checks if you are wearing less than 8 items.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>5</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Prude -</span> You will receive a minus to all active checks if you are wearing less than 8 items.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Osteopetrotic -</span> Your bones will be harder to break.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>10%</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Brittle Bones -</span> Your bones will break easier.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Agoraphilia -</span> You will receive a bonus to all checks when you are outside.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>8</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Agoraphobic -</span> You will receive a malus to all checks when outside.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Endurance Swimmer -</span> When in a room that has water as its terrain, you will receive a stamina boost.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>25%</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Weak Swimmer -</span> When in a room that has water as its terrain, you will use up more stamina.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Fast Swimmer -</span> You get a bonus to movement speed when the terrain has water.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>25%</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Weak Swimmer -</span> You get a malus to movement speed when the terrain has water.
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-lg-5 col-md-5 col-sm-12">
+            <span class="meritKeyword">Tunnel Rat -</span> You are as comfortable underground and in tight spaces as a rat, and have a lot less difficulty navigating and operating 
+            in such environments than other people do. You can also fit into marginally smaller spaces than your size would otherwise allow.
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12" style="text-align:center;">
+                <span>1 Step</span>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <span class="meritKeyword">Wide Shoulders -</span> You struggle to fit through doors and entries. Your shoulders are too wide! You will be unable to fit through 
+                normal doors.                
+            </div>
+        </div>
+        
+        <hr />
+
+        <!--Beginning of Category 2-->
+        <div class="row pb-3">
+            <div class="Col-12" style="text-align:center;">
+                <h2 class="meritKeyword">Other Merits</h2>
+            </div>
+        </div> 
+
+        <div class="row pb-2"  style="text-align:center;">
+            <div class="col-12">
+                <p style="font-size:1.25rem;">Each of the following merits can be chosen. They will each cost some amount of build points and require you to pick 1 category 1 flaw.</p>
+            </div>
+        </div>
+
+        <div class="row meritText">
+            <div class="col-12">
+            <span class="meritKeyword">Shield Wall -</span> You know how to work with others to form a shield wall, giving a bonus to shields if someone else in your party also has 
+            shield wall. <em style="color:#000033;">Cost: 100bp</em>
+            </div> 
+        </div>
+
+        <div class="row meritText">
+            <div class="col-12">
+            <span class="meritKeyword">Favoured Enemy -</span> Available enemies include wolves, wargs, bears, boars, warthogs, uruks, trolls, and undead. You will receive a +5 to 
+            any hostile actions toward those enemies. You may only have 1 favoured enemy. <em style="color:#000033;">Cost: 50bp</em>
+            </div> 
+        </div>
+
+        <div class="row meritText">
+            <div class="col-12">
+            <span class="meritKeyword">Combat Specialist -</span> This merit will give you a +5 to one combat skill of your choice. This makes you a specialist in your chosen combat 
+            skill. You may choose: Daggers, Light-Blade, Long-Blade, Heavy-Blade, Light-Bludgeon, Heavy-Bludgeon, Bludgeon, Light-Axe, Axe, Heavy-Axe, Short-Spear, Long-Spear, 
+            Throwing, Shortbow, Longbow, Parry, Dodge, Shields. <em style="color:#000033;">Cost: 150bp</em>
+            </div> 
+        </div>
+
+      </section>
+
+      <section id="footer" class="scrollContainer">
+        <h1 style="text-align:center;">Follow Arda Marred</h1>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 footerDesign"><a href="https://discord.gg/rnhymVekSW" style="color:inherit;text-decoration:none;" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a></div>
+        </div>
+        <p class="disclaimer">
+        Lord of the Rings: Fellowship of the Ring; Lord of the Rings: The Two Towers; Lord of the Rings: Return of the King; The Hobbit; the Middle Earth Expanded Universe;
+        and all logos, characters, artwork, stories, information, names, and other elements associated thereto, are the sole and exclusive property of Embracer Group. 
+        Arda Marred MUD is in no way affiliated with or endorsed by Embracer Group or any of its subsidiaries, employees, or associates. Arda Marred MUD offers no suggestion that 
+        the work presented on this web page is "official" or produced or sanctioned by the owner or any licensees of the aforementioned trademarks. Arda Marred MUD will take all 
+        steps necessary to ensure that any usage of trademarked items in no way confuses the audience of this site as to its origin. Arda Marred MUD makes no claim to own Lord of
+        the Rings or any of the copyrights or trademarks related to it. Arda Marred MUD does not generate profits, and is not a commercial enterprise. 
+        </p>
+      </section>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
