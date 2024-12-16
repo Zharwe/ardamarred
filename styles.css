@@ -239,6 +239,20 @@ body{
     padding-bottom:2%;
 }
 
+/**Merits & Flaws**/
+.meritText{
+    font-size:1.25rem;
+    padding-bottom: 1%;
+}
+
+.meritKeyword{
+    color:#000033
+}
+
+.meritColumnHead{
+    color:#000033;
+}
+
 /**Footer**/
 .footerDesign{
     font-size: 3rem;
